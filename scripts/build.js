@@ -131,6 +131,4 @@ main().catch(() => {
   shutdown();
 });
 
-['SIGINT', 'SIGTERM', 'SIGQUIT'].forEach(sig => process.on(sig, () => {
-  shutdown();
-}));
+['SIGINT', 'SIGTERM', 'SIGQUIT'].forEach(sig => process.on(sig, () => { shutdown(); }));
